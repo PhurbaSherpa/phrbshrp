@@ -4,7 +4,7 @@ import React from "react";
 export default function Navbar() {
     return (
         <div className="navbar-container">
-            <nav className="navbar navbar-expand-md navbar-light bg-light">
+            <nav className="navbar navbar-expand-md navbar-light bg-white">
                 <button
                     className="navbar-toggler"
                     type="button"
@@ -31,7 +31,7 @@ export default function Navbar() {
                     <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
                         <li className="nav-item active">
                             <a className="nav-link" href="#">
-                                Home <span className="sr-only">(current)</span>
+                                Home
                             </a>
                         </li>
                         <li className="nav-item">
