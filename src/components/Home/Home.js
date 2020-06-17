@@ -1,5 +1,6 @@
 import "./Home.css";
 import React from "react";
+import { Stockapp, CalsTracker, Eztextbooks } from "../index";
 
 export default function Home() {
     return (
@@ -23,7 +24,9 @@ export default function Home() {
                 </div>
             </div>
             <div id="facts" className="bottom-container">
-                hi
+                <Stockapp />
+                <CalsTracker />
+                <Eztextbooks />
             </div>
         </div>
     );
