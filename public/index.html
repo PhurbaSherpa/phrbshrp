@@ -70,6 +70,16 @@
         <script type="text/javascript">
             $(window).scroll(function (e) {
                 var $arrow = $(".arrow-down");
+                $(".project").each(function (i) {
+                    var bottom_of_object =
+                        $(this).position().top + $(this).outerHeight();
+                    var bottom_of_window =
+                        $(window).scrollTop() + $(window).height();
+                    if (bottom_of_window > bottom_of_object) {
+                        $(this).addClass("fade-in");
+                    }
+                });
+
                 console.log($(this).scrollTop());
                 console.log(window.innerHeight, "second");
                 if ($(this).scrollTop() > 400) {

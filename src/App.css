@@ -1,8 +1,8 @@
 .app {
     margin: 0 5%;
 }
-
 .project {
+    opacity: 0;
     margin: 5% 0 5% 10%;
     width: 80%;
     display: flex;
@@ -10,18 +10,78 @@
     justify-content: center;
 }
 
-.left {
-    height: 20vw;
-    width: 50%;
+.project a:hover {
+    transform: scale(1.1);
 }
 
-.right {
-    width: 50%;
+.left {
+    height: 20vw;
+    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.right {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    will-change: opacity;
+}
+.fade-in {
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.5s;
+}
+.fade-out {
+    opacity: 0;
+    animation-name: fadeOutOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-duration: 0.5s;
+}
+.arrows-container a {
+    color: black;
+}
+.arrows-container .next {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+.arrows-container .previous {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.arrows-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fadeOutOpacity {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 .right-text {
     text-align: center;
+    width: 80%;
 }

@@ -3,3 +3,7 @@ export { default as Home } from "./Home/Home";
 export { default as Stockapp } from "./Stockapp/Stockapp";
 export { default as CalsTracker } from "./CalsTracker/CalsTracker";
 export { default as Eztextbooks } from "./Eztextbooks/Eztextbooks";
+export { default as AboutStockapp } from "./Stockapp/About";
+export { default as AboutCalsTracker } from "./CalsTracker/About";
+export { default as AboutEztextbooks } from "./Eztextbooks/About";
+export { default as Aboutme } from "./Aboutme/Aboutme";

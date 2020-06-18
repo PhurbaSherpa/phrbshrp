@@ -1,3 +1,13 @@
 .calstracker-container > .project > .left {
     background-color: #f6dbc1;
+    display: flex;
+    justify-content: space-evenly;
+}
+.calstracker-container > .project > .left a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutCalsTracker-container {
+    padding-top: 10vh;
 }

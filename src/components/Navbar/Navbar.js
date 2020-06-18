@@ -1,5 +1,6 @@
 import "./Navbar.css";
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
     return (
@@ -16,13 +17,13 @@ export default function Navbar() {
                 >
                     <span className="navbar-toggler-icon"></span>
                 </button>
-                <a className="navbar-brand" href="#">
+                <Link className="navbar-brand" to="/">
                     <img
                         src={require("../res/Brand.png")}
                         width="125"
                         height="85"
                     />
-                </a>
+                </Link>
 
                 <div
                     className="collapse navbar-collapse"
@@ -30,25 +31,26 @@ export default function Navbar() {
                 >
                     <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
                         <li className="nav-item active">
-                            <a className="nav-link" href="#">
+                            <Link className="nav-link" to="/">
                                 Home
-                            </a>
+                            </Link>
                         </li>
+                        {/* {make this a dropdown to about projects} */}
                         <li className="nav-item">
-                            <a className="nav-link" href="#">
+                            <Link className="nav-link" to="#">
                                 Work
-                            </a>
+                            </Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">
+                            <Link className="nav-link" to="/aboutme">
                                 About
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                     <div className="social-container">
-                        <i class="fab fa-lg fa-linkedin-in"></i>
-                        <i class="fas fa-lg fa-envelope"></i>
-                        <i class="fab fa-lg fa-instagram"></i>
+                        <i className="fab fa-lg fa-linkedin-in"></i>
+                        <i className="fas fa-lg fa-envelope"></i>
+                        <i className="fab fa-lg fa-instagram"></i>
                     </div>
                 </div>
             </nav>

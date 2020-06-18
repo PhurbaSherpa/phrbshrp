@@ -1,3 +1,11 @@
 .eztextbooks-container > .project > .left {
     background-color: #b7d1c6;
 }
+.eztextbooks-container > .project > .left a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutEztextbooks-container {
+    padding-top: 10vh;
+}

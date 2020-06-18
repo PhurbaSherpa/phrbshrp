@@ -19,7 +19,7 @@ export default function Home() {
                         <span>Elegant</span> and <span>Efficient</span> code.
                     </div>
                     <a className="arrow-down" href="#facts">
-                        <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                        <i className="fa fa-arrow-down" aria-hidden="true"></i>
                     </a>
                 </div>
             </div>

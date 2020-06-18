@@ -1,3 +1,11 @@
 .stockapp-container > .project > .left {
     background-color: #d35555;
 }
+.stockapp-container > .project > .left > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutStockapp-container {
+    padding-top: 10vh;
+}
