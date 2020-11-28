@@ -3,6 +3,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
+    const goToSocials = () => {
+        document.getElementById("#footer");
+    };
+
     return (
         <div className="navbar-container">
             <nav className="navbar navbar-expand-md navbar-light bg-white">
@@ -18,11 +22,7 @@ export default function Navbar() {
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <Link className="navbar-brand" to="/">
-                    <img
-                        src={require("../res/Brand.png")}
-                        width="125"
-                        height="85"
-                    />
+                    <img src={require("../res/Brand.png")} width="100%" />
                 </Link>
 
                 <div
@@ -30,15 +30,15 @@ export default function Navbar() {
                     id="navbarTogglerDemo03"
                 >
                     <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
-                        <li className="nav-item active">
+                        <li className="nav-item">
                             <Link className="nav-link" to="/">
                                 Home
                             </Link>
                         </li>
                         {/* {make this a dropdown to about projects} */}
                         <li className="nav-item">
-                            <Link className="nav-link" to="#">
-                                Work
+                            <Link className="nav-link" to="/Works">
+                                Works
                             </Link>
                         </li>
                         <li className="nav-item">
@@ -46,12 +46,12 @@ export default function Navbar() {
                                 About
                             </Link>
                         </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="#footer">
+                                Socials
+                            </a>
+                        </li>
                     </ul>
-                    <div className="social-container">
-                        <i className="fab fa-lg fa-linkedin-in"></i>
-                        <i className="fas fa-lg fa-envelope"></i>
-                        <i className="fab fa-lg fa-instagram"></i>
-                    </div>
                 </div>
             </nav>
         </div>

@@ -1,4 +1,26 @@
 .aboutme-container {
-    height: 100vh;
-    padding-top: 10vh;
+    padding-top: 20vh;
+}
+.aboutme-inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.aboutme-inner > img {
+    width: 30%;
+    height: 30%;
+}
+.introduction-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 5%;
+}
+.introduction-container span {
+    text-decoration: underline;
+    font-weight: 800;
+}
+.introduction-container div {
+    font-weight: 400;
 }

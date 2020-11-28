@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { Navbar } from "./components";
+import { Navbar, Footer } from "./components";
 import Routes from "./Routes";
 
 function App() {
@@ -8,6 +8,7 @@ function App() {
         <div className="app">
             <Navbar />
             <Routes />
+            <Footer />
         </div>
     );
 }

@@ -1,12 +1,12 @@
-.stockapp-container > .project > .left {
+.visuo-container > .project > .left {
     background-color: #d35555;
 }
-.stockapp-container > .project > .left > a {
+.visuo-container > .project > .left > a {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.aboutStockapp-container {
+.aboutVisuo-container {
     padding-top: 15vh;
     min-height: 85vh;
 }

@@ -7,16 +7,26 @@ export default function Eztextbooks() {
         <div className="eztextbooks-container">
             <div className="project">
                 <div className="left">
-                    <Link to="Eztextbooks">Work In Progress!</Link>
+                    <Link to="/Eztextbook">
+                        <img
+                            src={require("../res/Eztextbook.png")}
+                            width="60%"
+                            height="60%"
+                        />
+                    </Link>
                 </div>
                 <div className="right">
                     <div className="right-text">
-                        <h2>Eztextbooks</h2>
+                        <Link to="/Eztextbook" style={{ color: "black" }}>
+                            <h2>Eztextbook</h2>
+                        </Link>
                         <br />
                         An ecommerce Web application built for a client to sell
-                        his books on.
+                        books on.
                         <div className="links">
-                            <a href="#">Live site</a> | <a href="#">GitHub</a>
+                            <a href="https://eztextbook.com" target="_blank">
+                                Live site
+                            </a>
                         </div>
                     </div>
                 </div>

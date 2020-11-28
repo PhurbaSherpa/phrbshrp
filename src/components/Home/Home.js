@@ -1,6 +1,6 @@
 import "./Home.css";
 import React from "react";
-import { Stockapp, CalsTracker, Eztextbooks } from "../index";
+import { Stockapp, CalsTracker, Eztextbooks, Visuo } from "../index";
 
 export default function Home() {
     return (
@@ -11,6 +11,8 @@ export default function Home() {
                         <img
                             src={require("../res/manComputer.png")}
                             alt="man working on computer"
+                            width="650"
+                            height="500"
                         />
                     </div>
                     <div className="home-description">
@@ -24,9 +26,10 @@ export default function Home() {
                 </div>
             </div>
             <div id="facts" className="bottom-container">
+                <Eztextbooks />
+                <Visuo />
                 <Stockapp />
                 <CalsTracker />
-                <Eztextbooks />
             </div>
         </div>
     );

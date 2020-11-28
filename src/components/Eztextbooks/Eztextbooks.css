@@ -7,5 +7,6 @@
     align-items: center;
 }
 .aboutEztextbooks-container {
-    padding-top: 10vh;
+    padding-top: 15vh;
+    min-height: 85vh;
 }

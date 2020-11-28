@@ -1,0 +1,10 @@
+.footer-container {
+    text-align: center;
+    height: 5vh;
+    font-weight: 300;
+    color: gray;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -6,6 +6,8 @@ import {
     AboutCalsTracker,
     AboutEztextbooks,
     Aboutme,
+    AboutVisuo,
+    Works,
 } from "./components";
 
 export default function Routes() {
@@ -13,8 +15,10 @@ export default function Routes() {
         <Switch>
             <Route path="/Stockapp" component={AboutStockapp} />
             <Route path="/CalsTracker" component={AboutCalsTracker} />
-            <Route path="/Eztextbooks" component={AboutEztextbooks} />
+            <Route path="/Eztextbook" component={AboutEztextbooks} />
+            <Route path="/Visuo" component={AboutVisuo} />
             <Route path="/Aboutme" component={Aboutme} />
+            <Route path="/Works" component={Works} />
             <Route path="/" component={Home} />
         </Switch>
     );

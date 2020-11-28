@@ -24,11 +24,17 @@ export default function CalsTracker() {
                 </div>
                 <div className="right">
                     <div className="right-text">
-                        <h2>CalsTracker</h2>
+                        <Link to="/CalsTracker" style={{ color: "black" }}>
+                            <h2>CalsTracker</h2>
+                        </Link>
                         <br />A Mobile application for tracking your calories.
                         <div className="links">
-                            <a href="#">Video Showcase</a> |{" "}
-                            <a href="#">GitHub</a>
+                            <a
+                                href="https://github.com/PhurbaSherpa/CalsTracker"
+                                target="_blank"
+                            >
+                                GitHub
+                            </a>
                         </div>
                     </div>
                 </div>
