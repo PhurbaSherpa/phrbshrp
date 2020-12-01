@@ -20,7 +20,7 @@ export default function Works() {
                 </div>
                 <div className="mt-3">
                     <h5>Visuo</h5>
-                    <Link>
+                    <Link to="/Visuo">
                         <img
                             className="work-img"
                             src={require("../res/Visuo.png")}
